@@ -39,22 +39,33 @@
                 margin-bottom: 8px;
             }
 
+            .actions img {
+                width: 25vw;
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+            }
+
 		</style>
     </head>
     <body>
-        <div class="card2">
-            <img src="card1.jpg" alt="">
-        </div>
        <div class="card2">
             <img src="strip.png" alt="">
             <img src="userdetails.jpg" id="userdetail" alt="">
-            <img src="media.jpg" id="media" alt="">
             <img src="caption.jpg" id="caption" alt="">
-            <img src="postaction.jpg" id="postaction" alt="">
+            <img src="media.jpg" id="media" alt="">
+            <div class="actions">
+                <a href="https://api.whatsapp.com/send?text=">
+                <img src="share.jpg" alt="">
+                </a>
+                <img src="comment.jpg" alt="">
+                <img src="like.jpg" alt="">
+                <img src="save.jpg" alt="">
+            </div>
         </div>
-        <div class="card2">
-            <img src="card3.jpg" alt="">
-        </div>
+
      </body>    
         <script>
             function tag1() {
