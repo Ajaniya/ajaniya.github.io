@@ -39,23 +39,39 @@
                 margin-bottom: 8px;
             }
 
+            .actions img {
+                width: 25vw;
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+            }
+
 		</style>
     </head>
     <body>
         <div class="card2">
-            <img src="card1.jpg" alt="">
-        </div>
-       
-		<div class="card2">
-            <img src="userdetails.jpg" id="userdetail" alt="">
-            <img src="media.jpg" id="media" alt="">
-            <img src="caption.jpg" id="caption" alt="">
-            <img src="postaction.jpg" id="postaction" alt="">
-        </div>
-        <div class="card2">
-            <img src="card3.jpg" alt="">
-        </div> 
-    </body>
+             <img src="userdetails.jpg" id="userdetail" alt="">
+             <img src="caption.jpg" id="caption" alt="">
+             <img src="media.jpg" id="media" alt="">
+             <div class="actions">
+                 <a href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">
+                 <img src="share.jpg" alt="">
+                 </a>
+                 <a href="#">
+                 <img src="comment.jpg" alt="">
+                 </a>
+                 <a href="#">
+                 <img src="like.jpg" alt="">
+                 </a>
+                 <a href="#">
+                 <img src="save.jpg" alt="">
+                 </a>
+             </div>
+         </div>
+             
+      </body>     
         <script>
             function tag1() {
                 Android.onAction(
