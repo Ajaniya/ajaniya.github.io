@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Hotjar Tracking Code for Prototypes -->
+		<script>
+			(function (h, o, t, j, a, r) {
+				h.hj =
+					h.hj ||
+					function () {
+						(h.hj.q = h.hj.q || []).push(arguments);
+					};
+				h._hjSettings = { hjid: 1752575, hjsv: 6 };
+				a = o.getElementsByTagName("head")[0];
+				r = o.createElement("script");
+				r.async = 1;
+				r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+		</script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+                background-color: #f3f3f3;
+			}
+			img {
+				width: 100vw;
+			}
+
+            .card2 {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            div { 
+                margin-bottom: 8px;
+            }
+
+		</style>
+    </head>
+    <body>
+        <div>
+            <img src="card1.jpg" alt="">
+        </div>
+       
+		<div class="card2">
+            <img src="userdetails.jpg" id="userdetail" alt="">
+            <img src="media.jpg" id="media" alt="">
+            <img src="caption.jpg" id="caption" alt="">
+            <img src="postaction.jpg" id="postaction" alt="">
+        </div>
+        <div>
+            <img src="card3.jpg" alt="">
+        </div> 
+    </body>
+        <script>
+            function tag1() {
+                Android.onAction(
+                    JSON.stringify({
+                        action: "open_activity",
+                        type: "tag",
+                        referrer: "webPost",
+                        tagId: "117253",
+                    })
+                );
+            }
+        </script>
+    </html>
+    
